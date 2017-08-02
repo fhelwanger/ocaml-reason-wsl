@@ -1,0 +1,9 @@
+{
+  "reason.path.ocamlfind": "ocamlfind.bat",
+  "reason.path.ocamlmerlin": "ocamlmerlin.bat",
+  "reason.path.opam": "opam.bat",
+  "reason.path.rebuild": "rebuild.bat",
+  "reason.path.refmt": "refmt.bat",
+  "reason.path.refmterr": "refmterr.bat",
+  "reason.path.rtop": "rtop.bat"
+}

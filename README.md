@@ -10,13 +10,25 @@ The ideia of this project is to create some simple batch files that call `bash -
 
 ## Install
 
-The only pre-requisite is that you have [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide) already configured. After that, just run and follow the instructions.
+The only pre-requisite is that you have [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide) already configured. After that, just run this and follow the instructions:
 
 ```
 npm install -g ocaml-on-windows
 ```
 
 > Pay attention when the opam installer asks which file to put the initialization scripts. You may want to change it to `~/.bashrc`.
+
+To check if everything went well, open cmd.exe and run:
+
+```
+ocaml -version
+```
+
+It should print something like that:
+
+```
+The OCaml toplevel, version 4.02.3
+```
 
 ## Editor Integration
 

@@ -1,0 +1,41 @@
+{
+  "name": "ocaml-on-windows",
+  "version": "0.0.1",
+  "description": "Workaround to use ocaml on windows through WSL",
+  "scripts": {
+    "preinstall": "bin\\preinstall.bat"
+  },
+  "bin": {
+    "ocaml": "./bin/ocaml.bat",
+    "ocamlfind": "./bin/ocamlfind.bat",
+    "ocamlmerlin": "./bin/ocamlmerlin.bat",
+    "ocamlmerlin-reason": "./bin/ocamlmerlin-reason.bat",
+    "ocamlmerlin-server": "./bin/ocamlmerlin-server.bat",
+    "ocp-autoconf": "./bin/ocp-autoconf.bat",
+    "ocp-build": "./bin/ocp-build.bat",
+    "ocp-indent": "./bin/ocp-indent.bat",
+    "ocp-pp": "./bin/ocp-pp.bat",
+    "opam": "./bin/opam.bat",
+    "rebuild": "./bin/rebuild.bat",
+    "refmt": "./bin/refmt.bat",
+    "refmterr": "./bin/refmterr.bat",
+    "rtop": "./bin/rtop.bat"
+  },
+  "files":[
+    "bin"
+  ],
+  "os": [
+    "win32"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fhelwanger/ocaml-on-windows.git"
+  },
+  "keywords": [
+    "ocaml",
+    "reason",
+    "windows"
+  ],
+  "author": "fhelwanger",
+  "license": "MIT"
+}

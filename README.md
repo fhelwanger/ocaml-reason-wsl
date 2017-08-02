@@ -10,7 +10,12 @@ The ideia of this project is to create some simple batch files that call `bash -
 
 ## Install
 
-The only pre-requisite is that you have [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide) already configured. After that, just run this and follow the instructions:
+First, install and configure these pre-requisites:
+
+* [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide)
+* [npm](https://www.npmjs.com/)
+
+After that, just run this and follow the instructions:
 
 ```
 npm install -g ocaml-on-windows

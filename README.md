@@ -34,21 +34,3 @@ It should print something like that:
 ```
 The OCaml toplevel, version 4.02.3
 ```
-
-## Editor Integration
-
-### vscode
-
-The [reason extension for vscode](https://marketplace.visualstudio.com/items?itemName=freebroccolo.reasonml) won't find these .bat files by default. You must put the following in your vscode settings:
-
-```json
-{
-  "reason.path.ocamlfind": "ocamlfind.bat",
-  "reason.path.ocamlmerlin": "ocamlmerlin.bat",
-  "reason.path.opam": "opam.bat",
-  "reason.path.rebuild": "rebuild.bat",
-  "reason.path.refmt": "refmt.bat",
-  "reason.path.refmterr": "refmterr.bat",
-  "reason.path.rtop": "rtop.bat"
-}
-```

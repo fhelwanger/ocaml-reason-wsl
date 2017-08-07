@@ -4,4 +4,4 @@ set bashx64="%systemroot%\system32\bash.exe"
 if exist %bashx86% set bashpath=%bashx86%
 if exist %bashx64% set bashpath=%bashx64%
 
-%bashpath% ~ -l -c %bashcmd%
+%bashpath% -l -c %bashcmd%

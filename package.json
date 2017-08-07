@@ -19,7 +19,8 @@
     "rebuild": "./bin/rebuild.bat",
     "refmt": "./bin/refmt.bat",
     "refmterr": "./bin/refmterr.bat",
-    "rtop": "./bin/rtop.bat"
+    "rtop": "./bin/rtop.bat",
+    "utop": "./bin/utop.bat"
   },
   "files":[
     "bin"

@@ -7,10 +7,9 @@
   },
   "bin": {
     "ocaml": "./bin/ocaml.bat",
+    "ocamldebug": "./bin/ocamldebug.bat",
     "ocamlfind": "./bin/ocamlfind.bat",
     "ocamlmerlin": "./bin/ocamlmerlin.bat",
-    "ocamlmerlin-reason": "./bin/ocamlmerlin-reason.bat",
-    "ocamlmerlin-server": "./bin/ocamlmerlin-server.bat",
     "ocp-autoconf": "./bin/ocp-autoconf.bat",
     "ocp-build": "./bin/ocp-build.bat",
     "ocp-indent": "./bin/ocp-indent.bat",

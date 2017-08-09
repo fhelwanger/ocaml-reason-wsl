@@ -1,3 +1,3 @@
 @echo off
 set bashcmd="refmt %*"
-call %~dp0base.bat
+call "%~dp0base.bat"

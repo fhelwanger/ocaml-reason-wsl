@@ -1,3 +1,3 @@
 @echo off
 set bashcmd="ocp-indent %*"
-call %~dp0base.bat
+call "%~dp0base.bat"

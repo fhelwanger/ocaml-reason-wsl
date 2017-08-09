@@ -1,3 +1,3 @@
 @echo off
 set bashcmd="ocp-build %*"
-call %~dp0base.bat
+call "%~dp0base.bat"

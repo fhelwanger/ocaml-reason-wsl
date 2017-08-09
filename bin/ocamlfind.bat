@@ -1,3 +1,3 @@
 @echo off
 set bashcmd="ocamlfind %*"
-call %~dp0base.bat
+call "%~dp0base.bat"

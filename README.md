@@ -21,8 +21,6 @@ After that, just run this and follow the instructions (it may take some time to 
 npm install -g ocaml-on-windows
 ```
 
-> Pay attention when the opam installer asks which file to put the initialization scripts. You may want to change it to `~/.bashrc`.
-
 To check if everything went well, open cmd.exe and run:
 
 ```

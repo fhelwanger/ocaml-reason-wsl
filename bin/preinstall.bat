@@ -1,7 +1,7 @@
 @echo off
 
 echo Installing ocaml...
-set bashcmd="sudo apt-get -y install m4 ocaml-nox ocaml ocaml-native-compilers opam"
+set bashcmd="sudo apt-get update; sudo apt-get -y install m4 ocaml-nox ocaml ocaml-native-compilers opam"
 call "%~dp0base.bat"
 
 echo Configuring opam...

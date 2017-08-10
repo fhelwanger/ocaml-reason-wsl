@@ -1,6 +1,6 @@
 {
   "name": "ocaml-on-windows",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Workaround to use ocaml on windows through WSL",
   "scripts": {
     "preinstall": "bin\\preinstall.bat"

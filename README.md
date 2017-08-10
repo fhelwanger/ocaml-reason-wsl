@@ -32,3 +32,14 @@ It should print something like that:
 ```
 The OCaml toplevel, version 4.02.3
 ```
+
+## Build
+
+Building windows binaries is supported through [opam-cross-windows](https://github.com/whitequark/opam-cross-windows). To test it, run:
+
+```
+echo let () = print_endline "hello world" > program.ml
+ocamlfind ocamlopt program.ml -o program.exe
+```
+
+It should create a `program.exe` in your current directory.

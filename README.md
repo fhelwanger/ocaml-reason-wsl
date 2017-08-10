@@ -15,7 +15,7 @@ First, install and configure these pre-requisites:
 * [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide)
 * [npm](https://www.npmjs.com/)
 
-After that, just run this and follow the instructions:
+After that, just run this and follow the instructions (it may take some time to install the ocaml toolchain):
 
 ```
 npm install -g ocaml-on-windows

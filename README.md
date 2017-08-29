@@ -30,7 +30,7 @@ ocaml -version
 It should print something like that:
 
 ```
-The OCaml toplevel, version 4.02.3
+The OCaml toplevel, version 4.04.0
 ```
 
 ## Build

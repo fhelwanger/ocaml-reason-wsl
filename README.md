@@ -4,7 +4,7 @@ Execute [ocaml](http://ocaml.org/) and [reason](https://reasonml.github.io/) bin
 
 ## What?
 
-At least in my very limited experience, ocaml has a very poor support for windows. Now that we have WSL, we can install it here, but it won't interop well with editors and other apps that won't "see" the binaries installed there.
+At least in my very limited experience, ocaml has a very poor support for windows. Now that we have WSL, we can install it there, but it won't interop well with editors and other apps that won't "see" the binaries installed there.
 
 The ideia of this project is to create some simple batch files that call `bash -c <ocaml-binary> <parameters>` that editors and other programs can call to access the ocaml binaries installed on WSL.
 

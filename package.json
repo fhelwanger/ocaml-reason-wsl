@@ -6,6 +6,7 @@
     "preinstall": "bin\\preinstall.bat"
   },
   "bin": {
+    "bsb": "./bin/bsb.bat",
     "ocaml": "./bin/ocaml.bat",
     "ocamldebug": "./bin/ocamldebug.bat",
     "ocamlfind": "./bin/ocamlfind.bat",

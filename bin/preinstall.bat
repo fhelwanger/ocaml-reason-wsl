@@ -21,7 +21,7 @@ REM Install bucklescript
 set "bashcmd=%bashcmd%; npm install -g bs-platform"
 
 REM Install ocaml
-set "bashcmd=%bashcmd%; sudo apt-get install -y m4 ocaml-nox ocaml opam"
+set "bashcmd=%bashcmd%; sudo apt-get install -y ocaml-nox opam m4"
 
 REM Configure opam
 set "bashcmd=%bashcmd%; opam init --auto-setup --dot-profile=~/.bashrc"

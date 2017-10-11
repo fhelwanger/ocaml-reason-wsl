@@ -1,6 +1,6 @@
 {
   "name": "ocaml-reason-wsl",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Workaround to use ocaml on windows through WSL",
   "scripts": {
     "preinstall": "bin\\preinstall.bat"

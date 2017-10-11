@@ -13,7 +13,8 @@ REM Configure opam
 set "bashcmd=%bashcmd%; opam init --auto-setup --dot-profile=~/.bashrc"
 set "bashcmd=%bashcmd%; opam update"
 set "bashcmd=%bashcmd%; opam switch 4.02.3"
-set "bashcmd=%bashcmd%; opam install -y reason merlin"
+set "bashcmd=%bashcmd%; opam install -y reason"
+set "bashcmd=%bashcmd%; opam install -y merlin.2.5.4"
 
 REM Install nodejs
 set "bashcmd=%bashcmd%; curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -"

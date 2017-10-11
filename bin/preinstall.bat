@@ -1,15 +1,33 @@
 @echo off
 
-echo Installing ocaml...
-set bashcmd="sudo apt-get update; sudo apt-get install -y m4 ocaml-nox ocaml ocaml-native-compilers opam gcc-multilib gcc-mingw-w64-i686 gcc-mingw-w64-x86-64"
-call "%~dp0base.bat"
+setlocal EnableDelayedExpansion
+set delayedexp=1
 
-echo Configuring opam...
-set bashcmd="opam init --auto-setup --dot-profile=~/.bashrc; opam switch 4.04.0; eval `opam config env`"
-call "%~dp0base.bat"
+REM Update package list
+set "bashcmd=sudo apt-get update"
 
-echo Installing opam packages...
-set bashcmd="opam repository add windows git://github.com/whitequark/opam-cross-windows"
-call "%~dp0base.bat"
-set bashcmd="opam install -y reason; opam install -y merlin; opam install -y ocp-indent; opam install -y ocaml-windows"
+REM Install ocaml
+set "bashcmd=%bashcmd%; sudo apt-get install -y m4 ocaml-nox opam"
+
+REM Configure opam
+set "bashcmd=%bashcmd%; opam init --auto-setup --dot-profile=~/.bashrc"
+set "bashcmd=%bashcmd%; opam update"
+set "bashcmd=%bashcmd%; opam switch 4.02.3"
+set "bashcmd=%bashcmd%; opam install -y reason.1.13.7"
+set "bashcmd=%bashcmd%; opam install -y merlin.2.5.4"
+
+REM Install nodejs
+set "bashcmd=%bashcmd%; curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -"
+set "bashcmd=%bashcmd%; sudo apt-get install -y nodejs"
+
+REM Fix npm permission issues
+REM https://docs.npmjs.com/getting-started/fixing-npm-permissions
+set "bashcmd=%bashcmd%; mkdir -p ~/.npm-global"
+set "bashcmd=%bashcmd%; npm config set prefix '~/.npm-global'"
+set "bashcmd=%bashcmd%; grep -Fq 'export PATH=~/.npm-global/bin:\$PATH' ~/.bashrc || echo 'export PATH=~/.npm-global/bin:\$PATH' >> ~/.bashrc"
+set "bashcmd=%bashcmd%; source ~/.bashrc"
+
+REM Install bucklescript
+set "bashcmd=%bashcmd%; npm install -g bs-platform"
+
 call "%~dp0base.bat"

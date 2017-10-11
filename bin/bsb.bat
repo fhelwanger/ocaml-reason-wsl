@@ -1,3 +1,3 @@
 @echo off
-set bashcmd="ocp-autoconf %*"
+set bashcmd="bsb %*"
 call "%~dp0base.bat"

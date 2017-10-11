@@ -1,4 +1,4 @@
-# ocaml-on-windows
+# ocaml-reason-wsl
 
 Execute [ocaml](http://ocaml.org/) and [reason](https://reasonml.github.io/) binaries on windows through WSL (Windows Subsystem for Linux).
 
@@ -18,7 +18,7 @@ First, install and configure these pre-requisites:
 After that, just run this and follow the instructions (it may take some time to install the ocaml toolchain):
 
 ```
-npm install -g ocaml-on-windows
+npm install -g ocaml-reason-wsl
 ```
 
 To check if everything went well, open cmd.exe and run:

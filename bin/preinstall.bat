@@ -4,7 +4,7 @@ setlocal EnableDelayedExpansion
 set delayedexp=1
 
 REM Update package list
-set "bashcmd=sudo apt-get update"
+set "bashcmd=sudo apt-get update; sudo apt-get upgrade -y"
 
 REM Install ocaml
 set "bashcmd=%bashcmd%; sudo apt-get install -y m4 ocaml-nox opam"

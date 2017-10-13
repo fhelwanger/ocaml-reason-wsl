@@ -1,6 +1,6 @@
 {
   "name": "ocaml-reason-wsl",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Workaround to use ocaml and reason on windows through WSL",
   "scripts": {
     "preinstall": "bin\\preinstall.bat"
